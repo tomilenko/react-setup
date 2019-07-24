@@ -1,16 +1,17 @@
 {
     "presets": [
-      "@babel/react",
-      "@babel/typescript",
-      [
-        "@babel/env",
-        {
-          "modules": false,
-          "targets": {
-            "chrome": "58",
-            "ie": "11"
-          }
-        }
-      ]
+        "@babel/react",
+        "@babel/typescript",
+        [
+            "@babel/env",
+            {
+                "modules": false,
+                "targets": {
+                    "chrome": "58",
+                    "ie": "11"
+                }
+            }
+        ]
     ],
-  }
+    "plugins": ["transform-class-properties"]
+}
